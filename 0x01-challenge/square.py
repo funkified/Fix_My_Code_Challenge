@@ -1,11 +1,16 @@
 #!/usr/bin/python3
+"""
+Square module
+"""
 
-class square():
-    
+
+class Square():
+    """
+    Square class
+    """
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         for key, value in kwargs.items():
             setattr(self, key, value)
